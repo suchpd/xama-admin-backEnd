@@ -1,21 +1,8 @@
 package com.xama.backend.api;
 
-import com.xama.backend.infrastructure.utils.HanLPUtil;
-import com.xama.backend.infrastructure.utils.JiebaUtil;
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import org.hibernate.boot.cfgxml.internal.ConfigLoader;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

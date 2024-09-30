@@ -7,7 +7,6 @@ import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.beans.BeanUtils;
 
 import javax.persistence.*;
@@ -19,7 +18,6 @@ import java.util.Date;
 @Getter
 @Setter(AccessLevel.PRIVATE)
 @Cacheable
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class MiniProgramUser extends Entity {
 
     /**

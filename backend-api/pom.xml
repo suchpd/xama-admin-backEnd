@@ -5,36 +5,20 @@
     <parent>
         <groupId>com.xama</groupId>
         <artifactId>admin-backend</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <packaging>jar</packaging>
 
     <artifactId>backend-api</artifactId>
-    <version>${backend.api.version}</version>
+    <version>${revision}</version>
     <name>backend-api</name>
     <description>Demo project for Spring Boot</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <backend.api.version>1.0.0.RELEASE</backend.api.version>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!--数据库连接-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
         </dependency>
 
         <!-- exclude logback , add log4j2 -->
@@ -65,32 +49,6 @@
         <dependency>
             <groupId>com.xama</groupId>
             <artifactId>backend-application-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!--dao-->
-        <dependency>
-            <groupId>com.xama</groupId>
-            <artifactId>backend-dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!--domain-->
-        <dependency>
-            <groupId>com.xama</groupId>
-            <artifactId>backend-domain</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!--infrastructure-->
-        <dependency>
-            <groupId>com.xama</groupId>
-            <artifactId>backend-infrastructure</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -107,12 +65,10 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.9.2</version>
         </dependency>
     </dependencies>
 
